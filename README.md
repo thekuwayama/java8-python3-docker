@@ -1,12 +1,12 @@
 # java8-python3-docker
 
 ```bash
-$ docker run -it java8-python3 java -version
+$ docker run -it thekuwayama/java8-python3 java -version
 openjdk version "1.8.0_212"
 OpenJDK Runtime Environment (IcedTea 3.12.0) (Alpine 8.212.04-r0)
 OpenJDK 64-Bit Server VM (build 25.242-b08, mixed mode)
 
-$ docker run -it java8-python3 jar
+$ docker run -it thekuwayama/java8-python3 jar
 Usage: jar {ctxui}[vfmn0PMe] [jar-file] [manifest-file] [entry-point] [-C dir] files ...
 Options:
     -c  create new archive
@@ -34,9 +34,9 @@ Example 2: use an existing manifest file 'mymanifest' and archive all the
            files in the foo/ directory into 'classes.jar':
        jar cvfm classes.jar mymanifest -C foo/ .
 
-$ docker run -it java8-python3 python3 -V
+$ docker run -it thekuwayama/java8-python3 python3 -V
 Python 3.6.9
 
-$ docker run -it java8-python3 pip3 -V
+$ docker run -it thekuwayama/java8-python3 pip3 -V
 pip 18.1 from /usr/lib/python3.6/site-packages/pip (python 3.6)
 ```
